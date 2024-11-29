@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //reduce method
+        let arr = [1,2,3,4,5]
+        let newarr = arr.reduce((cnt ,val)=> {
+            return val+cnt
+        },0)
+        console.log(newarr)
+        //avergae 
+        let n = arr.length
+        console.log(newarr/n)
+//         Task 3: Filter Adults 
+const people = [
+  { name: "John", age: 17 },
+  { name: "Jane", age: 22 },
+  { name: "Jim", age: 15 },
+  { name: "Jack", age: 19 }
+];
+let newpeople = people.filter((val)=>{
+    return (val.age>18)
+}
+)
+console.log(newpeople)
+
+    </script>
+</body>
+</html>
